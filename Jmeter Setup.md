@@ -68,7 +68,15 @@
     Right-click Thread Group →
     Add → Listener → Aggregate Report
 
-    
+### ----------------------------------------------------
+
+## Run in Non-GUI
+   open CMD
+
+       cd C:\tools\apache-jmeter-5.6.3\bin>jmeter.bat -n -t "C:\test\SpringBoot Load Test.jmx" -l C:\test\results.jtl -e -o C:\test\report
+                                               OR
+       cd C:\tools\apache-jmeter-5.6.3\bin>jmeter.bat -n -t "C:\test\SpringBoot Load Test.jmx" -l C:\test\results.jtl   
+       cd C:\tools\apache-jmeter-5.6.3\bin>jmeter.bat -g C:\test\results.jtl -o C:\test\report
     
 
     
