@@ -19,6 +19,12 @@ JMeter UI opens.
 ### ----------------------------------------------------------
 
 # Prepare Load Testing
+
+## Create the Test Plan (GUI)
+    •	File → New
+    •	Rename Test Plan → SpringBoot-jvm-test
+save it
+
 ## Add Thread Group
     Right-click Test Plan →
     Add → Threads (Users) → Thread Group
