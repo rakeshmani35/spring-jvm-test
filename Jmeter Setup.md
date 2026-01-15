@@ -10,6 +10,8 @@
     3.	Extract to: C:\tools\apache-jmeter-5.6.3
 
 ## Start JMeter (GUI mode – first time)
+  JMeter GUI mode used to do setup for load testing (prepare load test) and Non-GUI mode use load-test and generate report.
+  
     •	From Command Prompt (not PowerShell):
         cd C:\tools\apache-jmeter-5.6.3\bin>jmeter.bat
     •	JMeter UI opens.
