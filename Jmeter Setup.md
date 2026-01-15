@@ -77,13 +77,14 @@ save it
 ### ----------------------------------------------------
 
 ## Run in Non-GUI
-   open new CMD
+   open new CMD (path: E:\workspace\spring-jvm-test\JvmTest\ where want to generate result)
 
-       cd C:\tools\apache-jmeter-5.6.3\bin>jmeter.bat -n -t "C:\test\SpringBoot Load Test.jmx" -l C:\test\results.jtl -e -o C:\test\report
-                                               OR
-       cd C:\tools\apache-jmeter-5.6.3\bin>jmeter.bat -n -t "C:\test\SpringBoot Load Test.jmx" -l C:\test\results.jtl   
-       cd C:\tools\apache-jmeter-5.6.3\bin>jmeter.bat -g C:\test\results.jtl -o C:\test\report
+       cd C:\tools\apache-jmeter-5.6.3\bin>jmeter.bat -n -t E:\workspace\spring-jvm-test\JvmTest\SpringBoot-jvm-test.jmx -l E:\workspace\spring-jvm-test\JvmTest\results.jtl -e -o E:\workspace\spring-jvm-test\JvmTest\report
+
+                                               OR one by one
+       cd C:\tools\apache-jmeter-5.6.3\bin>jmeter.bat -n -t "E:\workspace\spring-jvm-test\JvmTest\SpringBoot-jvm-test.jmx" -l E:\workspace\spring-jvm-test\JvmTest\results.jtl   
+       cd C:\tools\apache-jmeter-5.6.3\bin>jmeter.bat -g E:\workspace\spring-jvm-test\JvmTest\results.jtl -o E:\workspace\spring-jvm-test\JvmTest\report
     
 
-  <img width="860" height="340" alt="image" src="https://github.com/user-attachments/assets/98a02e2b-44ec-4075-8516-6690e11c61b0" />
-  
+ <img width="854" height="336" alt="image" src="https://github.com/user-attachments/assets/c263f391-de77-42e3-bdf6-120eb1a2682e" />
+
