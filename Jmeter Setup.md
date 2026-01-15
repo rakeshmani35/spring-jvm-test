@@ -77,7 +77,7 @@ save it
 ### ----------------------------------------------------
 
 ## Run in Non-GUI
-   open CMD
+   open new CMD
 
        cd C:\tools\apache-jmeter-5.6.3\bin>jmeter.bat -n -t "C:\test\SpringBoot Load Test.jmx" -l C:\test\results.jtl -e -o C:\test\report
                                                OR
@@ -85,4 +85,5 @@ save it
        cd C:\tools\apache-jmeter-5.6.3\bin>jmeter.bat -g C:\test\results.jtl -o C:\test\report
     
 
-    
+  <img width="860" height="340" alt="image" src="https://github.com/user-attachments/assets/98a02e2b-44ec-4075-8516-6690e11c61b0" />
+  
