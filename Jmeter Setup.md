@@ -14,7 +14,7 @@
   
     •	From Command Prompt (not PowerShell):
         cd C:\tools\apache-jmeter-5.6.3\bin>jmeter.bat
-    •	JMeter UI opens.
+JMeter UI opens.
 
 ### ----------------------------------------------------------
 
