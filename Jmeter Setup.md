@@ -14,8 +14,8 @@
   
     •	From Command Prompt (not PowerShell):
         cd C:\tools\apache-jmeter-5.6.3\bin>jmeter.bat
-JMeter UI opens.
-
+JMeter UI opens. </br>
+Set test plan 
 ### ----------------------------------------------------------
 
 # Prepare Load Testing
@@ -79,9 +79,6 @@ save it
 ## Run in Non-GUI
    open new CMD (path: E:\workspace\spring-jvm-test\JvmTest\ where want to generate result)
    
-   JMeter produced: <br>
-       • results.jtl → raw test results <br>
-       •	report/ → HTML dashboard`
 
        cd C:\tools\apache-jmeter-5.6.3\bin>jmeter.bat -n -t E:\workspace\spring-jvm-test\JvmTest\SpringBoot-jvm-test.jmx -l E:\workspace\spring-jvm-test\JvmTest\results.jtl -e -o E:\workspace\spring-jvm-test\JvmTest\report
 
@@ -92,6 +89,17 @@ save it
 
  <img width="854" height="336" alt="image" src="https://github.com/user-attachments/assets/c263f391-de77-42e3-bdf6-120eb1a2682e" />
 
+**JMeter produced:**
+
+E:\workspace\spring-jvm-test\JvmTest\
+- **results.jtl** → raw test results
+- **report/**
+  - content
+  - sbadmin2-1.0.7
+  - index.html → HTML dashboard (click)
+  - statistics
+
+  When you start JMeter in non-GUI mode, everything defined in the test plan (SpringBoot-jvm-test.jmx) is executed, and the report is generated     
 
  ## After execution in Non-GUI mode
  below link and screen-shot automatically open in browser: <br>
@@ -99,6 +107,42 @@ save it
 
 JMeter HTML Dashboard: it comes from report/index.html
    <img width="944" height="482" alt="image" src="https://github.com/user-attachments/assets/43da3e84-4559-40a2-a32c-b304d35afc43" />
+
+
+### Execution truth table (very important)
+| Scenario         | Test runs   | results.jtl | HTML report  |
+| ---------------- | ----------  | ----------- | ------------ |
+| `-n -t` only     | ✅         | ❌          | ❌           |
+| `-n -t -l`       | ✅         | ✅          | ❌           |
+| `-n -t -l -e -o` | ✅         | ✅          | ✅           |
+| `-g -e -o`       | ❌         | (input)      | ✅           |
+
+
+
+### Run in GUI mode
+Add a Listener </br>
+  - Right-click on Test Plan or Thread Group <br>
+  - Add → Listener → View Results Tree </br>
+  - Add → Listener → Summary Report </br>
+  - Add → Listener → Aggregate Report </br>
+click on 'run'
+
+ View Results Tree
+<img width="959" height="357" alt="image" src="https://github.com/user-attachments/assets/76654173-6252-4a49-b7ad-f0d098a30768" />
+
+Summary Report
+<img width="959" height="282" alt="image" src="https://github.com/user-attachments/assets/6a78823e-a66d-49b8-a21c-e7fc28da611d" />
+
+Aggregate Report
+<img width="959" height="317" alt="image" src="https://github.com/user-attachments/assets/cb3e2574-ec02-49ba-a5cf-ffff7afebb6e" />
+
+
+### Different purpose
+| Mode    | Purpose                    |
+| ------- | -------------------------- |
+| GUI     | Test design & debugging    |
+| Non-GUI | Load execution & reporting |
+
       
 
 ### <--------------- fix issue ----------------->
