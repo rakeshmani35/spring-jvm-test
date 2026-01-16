@@ -19,10 +19,10 @@ This asks G1 to aim for ~200ms pauses (not guaranteed).
 
 ## Tune attempt #1 (bigger heap + pause goal)
    Heap sizing
-   If you see frequent GC + rising latency:
+   If you see frequent GC + rising latency: </br>
 
-    Try increasing heap:
-        from -Xms512m -Xmx512m → -Xms1g -Xmx1g
+   Try increasing heap: </br>
+       `  from -Xms512m -Xmx512m → -Xms1g -Xmx1g`
 
     -Xms1g
     -Xmx1g 
