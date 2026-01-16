@@ -89,6 +89,13 @@ save it
  <img width="854" height="336" alt="image" src="https://github.com/user-attachments/assets/c263f391-de77-42e3-bdf6-120eb1a2682e" />
 
 
+ ## After execution in Non-GUI mode
+         http://localhost:63342/spring-jvm-test/JvmTest/report/content/pages/ResponseTimes.html
+
+   <img width="944" height="482" alt="image" src="https://github.com/user-attachments/assets/43da3e84-4559-40a2-a32c-b304d35afc43" />
+      
+
+### <--------------- fix issue ----------------->
 ## if html file not generate: (report/index.html)
 Add in jmeter.properties file
     jmeter.save.saveservice.output_format=csv
