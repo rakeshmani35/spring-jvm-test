@@ -78,6 +78,10 @@ save it
 
 ## Run in Non-GUI
    open new CMD (path: E:\workspace\spring-jvm-test\JvmTest\ where want to generate result)
+   
+   JMeter produced: <br>
+       • results.jtl → raw test results <br>
+       •	report/ → HTML dashboard`
 
        cd C:\tools\apache-jmeter-5.6.3\bin>jmeter.bat -n -t E:\workspace\spring-jvm-test\JvmTest\SpringBoot-jvm-test.jmx -l E:\workspace\spring-jvm-test\JvmTest\results.jtl -e -o E:\workspace\spring-jvm-test\JvmTest\report
 
@@ -90,8 +94,10 @@ save it
 
 
  ## After execution in Non-GUI mode
+ below link and screen-shot automatically open in browser: <br>
          http://localhost:63342/spring-jvm-test/JvmTest/report/content/pages/ResponseTimes.html
 
+JMeter HTML Dashboard: it comes from report/index.html
    <img width="944" height="482" alt="image" src="https://github.com/user-attachments/assets/43da3e84-4559-40a2-a32c-b304d35afc43" />
       
 
