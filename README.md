@@ -73,9 +73,9 @@ GC logs need dedicated GC analyzers, for example:
 ## Correct File ↔ Tool Mapping
 | **Tools**               | **File type**                  | **What it contains**                                   | **Purpose**                      |
 | ----------------------- | ------------------------------ | ------------------------------------------------------ | -------------------------------- |
-| **Prometheus**          | HTTP metrics (no file)         | JVM heap, GC pauses, CPU, threads, memory usage        | Continuous JVM health monitoring |
+| **Prometheus**          | HTTP metrics (no file)         | JVM heap, GC pauses(count, total time), CPU, threads, memory usage        | Continuous JVM health monitoring |
 | **Grafana**             | Queries data sources (no file) | Time-series data from Prometheus or logs               | Visualization & dashboards       |
 | **Apache JMeter**       | `.jmx`                         | Load-test definition (threads, samplers, assertions)   | Define and execute load tests    |
 | **Apache JMeter**       | `.jtl`                         | Test results (latency, throughput, errors)             | Analyze load-test results        |
 | **JDK Mission Control** | `.jfr`                         | JVM profiling events (CPU, allocation, locks, threads) | Root-cause performance analysis  |
-| **GC Analyzer**         | `gc.log`                       | Garbage collection events, pause times, heap sizes     | GC tuning & memory optimization  |
+| **GC Analyzer**         | `gc.log`                       | Garbage collection events, pause times, GC type, heap sizes     | GC tuning & memory optimization  |
