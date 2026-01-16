@@ -102,10 +102,8 @@ E:\workspace\spring-jvm-test\JvmTest\
   When you start JMeter in non-GUI mode, everything defined in the test plan (SpringBoot-jvm-test.jmx) is executed, and the report is generated     
 
  ## After execution in Non-GUI mode
- below link and screen-shot automatically open in browser: <br>
-         http://localhost:63342/spring-jvm-test/JvmTest/report/content/pages/ResponseTimes.html
-
-JMeter HTML Dashboard: it comes from report/index.html
+  index.html → HTML dashboard (click) </br>
+  JMeter HTML Dashboard: it comes from report/index.html
    <img width="944" height="482" alt="image" src="https://github.com/user-attachments/assets/43da3e84-4559-40a2-a32c-b304d35afc43" />
 
 
